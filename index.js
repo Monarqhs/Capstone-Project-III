@@ -13,6 +13,7 @@ let posts = []; // Array untuk menyimpan posting sementara
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/styles', express.static(path.join(__dirname, 'public/styles')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
