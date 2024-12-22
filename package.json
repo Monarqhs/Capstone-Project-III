@@ -1,0 +1,17 @@
+{
+  "name": "26.0-capstone-project-iii",
+  "version": "1.0.0",
+  "description": "Capstone Project for Taking Notes with Node JS, Express, and EJS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Monarqhs",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  }
+}

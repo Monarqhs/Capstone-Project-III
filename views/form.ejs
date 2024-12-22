@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+<main>
+    <div class="card">
+        <h1><%= post ? 'Edit Your Post' : 'Create a New Post' %></h1>
+        <form action="<%= post ? `/edit/${post.id}` : '/form' %>" method="POST">
+            <% if (post) { %>
+                <input type="hidden" name="id" value="<%= post.id %>">
+            <% } %>
+            <input type="text" name="title" placeholder="Post Title" value="<%= post ? post.title : '' %>" required>
+            <textarea name="content" placeholder="Write your post here..." required><%= post ? post.content : '' %></textarea>
+            <button type="submit" class="btn">Save</button>
+        </form>
+    </div>
+</main>
+<%- include("partials/footer") %>
